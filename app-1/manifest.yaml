@@ -51,6 +51,9 @@ metadata:
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:996058207546:certificate/6e5afa93-97a3-450e-934f-1177d7c6c5e3
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/tags: Environment=dev,project=safety
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/target-type: ip
+
 spec:
   ingressClassName: alb
   rules:
