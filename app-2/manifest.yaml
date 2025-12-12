@@ -53,6 +53,7 @@ metadata:
     alb.ingress.kubernetes.io/tags: Environment=dev,project=safety
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/group.name:	safety
 
 spec:
   ingressClassName: alb
